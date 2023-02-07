@@ -283,7 +283,6 @@ const App = () => {
         <button onClick={() => window.location.reload(false)}>Refresh Options
         </button>
       </div>
-      <DocumentMeta {...meta} />
     </div>
   );  
 };
