@@ -272,6 +272,11 @@ const App = () => {
         <button onClick={() => window.location.reload(false)}>Refresh Options
         </button>
       </div>
+      <Helmet>
+        <title>Meal Planner | Plan A Menu Of Simple Healthy Meals</title>
+        <meta name="description" content="Plan, organize, and customize your meals with MealEntropy. Our platform offers healthy, tasty, and convenient meal options that fit your lifestyle and nutrition needs." />
+        <meta name="keywords" content="Food, Recipes, Meals, Plan, Organize, Customize, Healthy, Tasty, Convenient, Lifestyle, Efficient, Nutritional, User-friendly, Innovative" />
+      </Helmet>
     </div>
   );  
 };
