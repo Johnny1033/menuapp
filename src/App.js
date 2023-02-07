@@ -237,18 +237,6 @@ const App = () => {
     const shuffledVegetarian = vegetarian.sort(() => 0.5 - Math.random());
     const newSelectedVegetarian = shuffledVegetarian.slice(0, 5);
     setSelectedVegetarian(newSelectedVegetarian);
-
-    const meta = {
-      title: 'ChatGPT Powered Menu Generator',
-      description: 'Plan and organize your favorite meals with ease using our menu website. Create customized meal plans for a healthier and tastier lifestyle.',
-      canonical: 'http://example.com/path/to/page',
-      meta: {
-          charset: 'utf-8',
-          keywords: 'food,mom hack,meals,plan,organize,customize,healthy,tasty,convenient,lifestyle,efficient,nutritional,chatgpt'
-      }
-    };
-    
-
   }, []);
 
   return (
