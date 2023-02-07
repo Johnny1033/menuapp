@@ -237,11 +237,22 @@ const App = () => {
     const shuffledVegetarian = vegetarian.sort(() => 0.5 - Math.random());
     const newSelectedVegetarian = shuffledVegetarian.slice(0, 5);
     setSelectedVegetarian(newSelectedVegetarian);
+
+    const meta = {
+      title: 'ChatGPT Powered Menu Generator',
+      description: 'Plan and organize your favorite meals with ease using our menu website. Create customized meal plans for a healthier and tastier lifestyle.',
+      canonical: 'http://example.com/path/to/page',
+      meta: {
+          charset: 'utf-8',
+          keywords: 'food,mom hack,meals,plan,organize,customize,healthy,tasty,convenient,lifestyle,efficient,nutritional,chatgpt'
+      }
+    };
+    
+
   }, []);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <h1 style={{ textAlign: "center", fontSize: "40px", textShadow: "1px 1px #003366, 2px 2px #aaa, 3px 3px #888" }}>Banana Labs Menu Generator</h1>
       <div style={{ display: "flex", justifyContent: "space-between", margin: "1px" }}>
         <div style={{ display: "flex", flexDirection: "column", width: "30%", marginRight: "100px" }}>
           <h3 style={{ textAlign: "center", fontSize: "30px", textShadow: "1px 1px #aaa, 2px 2px #003366" }}>Main</h3>
