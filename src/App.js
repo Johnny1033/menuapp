@@ -82,75 +82,11 @@ const App = () => {
     "Beef and Cabbage Casserole", 
     "Beef and Squash Casserole"];
 
-  const side = [  
-    "Baked Potato",   
-    "Baked Beans",   
-    "Broccoli",   
-    "Cauliflower",   
-    "Corn",   
-    "Green Beans",   
-    "Mashed Potatoes",   
-    "Mac and Cheese",   
-    "Pasta Salad",   
-    "Potato Salad",   
-    "Rice",   
-    "Roasted Potatoes",   
-    "Salad",   
-    "Sweet Potato",   
-    "Vegetable Medley",   
-    "Zucchini",
-    "Mashed Potatoes",   
-    "Roasted Vegetables",   
-    "Steamed Rice",   
-    "Baked Mac and Cheese",   
-    "Garlic Bread",   
-    "Roasted Potatoes",   
-    "Grilled Asparagus",   
-    "Steamed Broccoli",   
-    "Baked Sweet Potato",   
-    "Corn on the Cob",  
-    "Baked Beans",  
-    "Roasted Carrots",  
-    "Steamed Peas",  
-    "Fried Rice",  
-    "Stuffed Bell Peppers",  
-    "Cauliflower Rice",  
-    "Grilled Zucchini",  
-    "Steamed Green Beans",  
-    "Baked Squash",  
-    "Sauteed Spinach",  
-    "Roasted Brussels Sprouts",  
-    "Steamed Cauliflower",  
-    "Baked Yam",  
-    "Grilled Eggplant",  
-    "Fried Okra",  
-    "Steamed Cabbage",  
-    "Baked Artichoke",  
-    "Roasted Radicchio",  
-    "Grilled Portobello Mushroom",  
-    "Steamed Kale",  
-    "Baked Potatoes",  
-    "Roasted Beets",  
-    "Grilled Pineapple",  
-    "Steamed Sweet Potato",  
-    "Baked Butternut Squash",  
-    "Roasted Turnips",  
-    "Grilled Eggplant with Tomato",  
-    "Steamed Leeks",  
-    "Baked Acorn Squash",  
-    "Roasted Red Peppers",  
-    "Grilled Tomatoes",  
-    "Steamed Carrots",  
-    "Baked Spaghetti Squash",  
-    "Roasted Parsnips",  
-    "Grilled Squash",  
-    "Steamed Sweet Peppers",  
-    "Baked Delicata Squash",  
-    "Roasted Fennel",  
-    "Grilled Sweet Potato",  
-    "Steamed Yellow Squash",  
-    "Baked Kabocha Squash",  
-    "Roasted Cauliflower"];
+  const keto = [  
+    "Baked salmon with Avocado Sauce",  
+    "Cauliflower Fried Rice with Chicken",  
+    "Zucchini Noodles with Meat Sauce",  
+    "Cabbage Roll Casserole",  "Cheeseburger Salad with Thousand Island Dressing",  "Stuffed Bell Peppers with Ground Beef",  "Grilled Pork Chops with Roasted Broccoli",  "Low Carb Meatloaf with Mashed Cauliflower",  "Cauliflower Pizza Crust with Pepperoni",  "Keto Chicken Parmesan",  "Sautéed Shrimp with Garlic and Butter",  "Steak Fajita Bowl with Cauliflower Rice",  "Keto Chicken Alfredo with Zucchini Noodles",  "Low Carb Beef and Broccoli Stir-Fry",  "Bacon Wrapped Pork Tenderloin with Green Beans",  "Shepherds Pie with Cauliflower Mash",  "Keto Meatballs with Tomato Sauce and Zucchini Noodles",  "Keto Tuna Salad with Avocado Oil Mayonnaise",  "Low Carb Chicken Enchiladas with Cheese Sauce",  "Baked Chicken Thighs with Asparagus",  "Keto Buffalo Chicken Salad",  "Keto Beef and Mushroom Stir-Fry",  "Keto Creamy Garlic Shrimp with Broccoli",  "Keto Bacon Cheeseburger Casserole",  "Keto Cauliflower Mac and Cheese",  "Low Carb Beef Stir-Fry with Vegetables",  "Keto Chicken and Broccoli Casserole",  "Keto Shrimp Scampi with Zucchini Noodles",  "Low Carb Pork Chops with Apple Cider Vinegar",  "Keto Beef and Broccoli Soup",  "Keto Turkey Meatballs with Marinara Sauce",  "Keto Bacon Wrapped Asparagus",  "Keto Tuna Salad Stuffed Avocados",  "Keto Spaghetti Squash with Meat Sauce",  "Low Carb Chicken Fajitas with Peppers and Onions",  "Keto Baked Salmon with Lemon and Herbs",  "Keto BLT Salad with Avocado",  "Keto Grilled Steak with Chimichurri Sauce",  "Low Carb Chicken Stir-Fry with Peanut Sauce",  "Keto Cheesy Broccoli and Chicken Casserole",  "Keto Chicken and Vegetable Soup",  "Keto Beef and Vegetable Stir-Fry",  "Low Carb Pork Tenderloin with Rosemary and Garlic",  "Keto Grilled Chicken with Avocado Salsa",  "Keto Shrimp and Grits with Cauliflower Grits",  "Keto BBQ Ribs with Coleslaw",  "Keto Beef Tacos with Lettuce Wraps",  "Keto Chicken Caesar Salad",  "Keto Grilled Shrimp Skewers with Lemon and Garlic"];
 
   const vegetarian = [
     "Falafel", 
@@ -223,7 +159,7 @@ const App = () => {
     "Vegetable and Tofu Enchiladas"];
 
   const [selectedMain, setSelectedMain] = useState([]);
-  const [selectedSide, setSelectedSide] = useState([]);
+  const [selectedKeto, setSelectedKeto] = useState([]);
   const [selectedVegetarian, setSelectedVegetarian] = useState([]);
 
   useEffect(() => {
@@ -231,9 +167,9 @@ const App = () => {
     const newSelectedMain = shuffledMain.slice(0, 5);
     setSelectedMain(newSelectedMain);
     
-    const shuffledSide = side.sort(() => 0.5 - Math.random());
-    const newSelectedSide = shuffledSide.slice(0, 5);
-    setSelectedSide(newSelectedSide);
+    const shuffledKeto = keto.sort(() => 0.5 - Math.random());
+    const newSelectedKeto = shuffledKeto.slice(0, 5);
+    setSelectedKeto(newSelectedKeto);
 
     const shuffledVegetarian = vegetarian.sort(() => 0.5 - Math.random());
     const newSelectedVegetarian = shuffledVegetarian.slice(0, 5);
@@ -252,9 +188,9 @@ const App = () => {
           </ul>
         </div>
         <div style={{ display: "flex", flexDirection: "column", width: "30%", marginRight: "100px" }}>
-          <h3 style={{ textAlign: "center", fontSize: "30px", textShadow: "1px 1px #aaa, 2px 2px #003366" }}>Side</h3>
+          <h3 style={{ textAlign: "center", fontSize: "30px", textShadow: "1px 1px #aaa, 2px 2px #003366" }}>Keto</h3>
           <ul>
-            {selectedSide.map((item, index) => (
+            {selectedKeto.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
