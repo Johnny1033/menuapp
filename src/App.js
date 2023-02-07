@@ -268,7 +268,7 @@ const App = () => {
           </ul>
         </div>
       </div>
-      <div style={{ textAlign: "center", marginTop: "20px" }}>
+      <div style={{ textAlign: "center", marginTop: "10px" }}>
         <button onClick={() => window.location.reload(false)}>Refresh Options
         </button>
       </div>
