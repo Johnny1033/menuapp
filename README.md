@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+Meal Planner App
+This is a simple meal planner app built using React. It displays three different categories of meals - Main, Keto, and Vegetarian - with randomly generated meal suggestions. Users can refresh the meal suggestions by clicking the "Refresh Options" button. You can access the app at www.mealentropy.com. To view more of my work, visit www.johnmessinger.io.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Randomly generated meal suggestions in three categories: Main, Keto, and Vegetarian
+Refresh button to generate new meal suggestions
+Responsive design for better user experience
+SEO optimized with Helmet for better search engine visibility
+Installation
+Make sure you have Node.js and npm installed on your machine. You can download Node.js from here and it comes with npm bundled.
 
-## Available Scripts
+Clone this repository or download the source code.
 
-In the project directory, you can run:
+git clone https://github.com/yourusername/meal-planner.git
 
-### `npm start`
+Navigate to the project directory and install the required dependencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+cd meal-planner
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Run the development server.
 
-### `npm test`
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Open http://localhost:3000 to view the app in your browser. The page will reload automatically if you make any changes to the source code.
 
-### `npm run build`
+Usage
+Simply open the app in your browser and view the meal suggestions in the Main, Keto, and Vegetarian categories. If you want to generate new meal suggestions, click the "Refresh Options" button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dependencies
+React - A JavaScript library for building user interfaces
+React Helmet - A React component to manage the document head
+Contributing
+Feel free to contribute to this project by submitting a pull request or reporting any issues you encounter.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+License
+This project is licensed under the MIT License.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author
+John Messinger - www.johnmessinger.io
